@@ -35,8 +35,9 @@ AUTODISCOVERED = False
 
 LINEFEED_PATTERN = re.compile('\n\s*\n', re.MULTILINE)
 def convert_linefeeds(content):
-    content = LINEFEED_PATTERN.sub('<br /><br />', content)
-    return content.replace('\n', '<br />')
+    return content
+    #content = LINEFEED_PATTERN.sub('<br /><br />', content)
+    #return content.replace('\n', '<br />')
 
 
 class UnmatchablePseudoPattern(object):
